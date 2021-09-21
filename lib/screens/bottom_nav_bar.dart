@@ -1,4 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:heart_app/screens/profile_screen.dart';
+
+import 'cat_screen.dart';
+import 'chat_screen.dart';
+import 'home_screen.dart';
 
 class BottomNav extends StatefulWidget {
   const BottomNav({Key? key}) : super(key: key);

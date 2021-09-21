@@ -1,7 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:planets_app/screens/home_screen.dart';
 import 'dart:math' as math;
+
+import 'home_screen.dart';
 
 class CatScreen extends StatefulWidget {
   const CatScreen({Key? key}) : super(key: key);

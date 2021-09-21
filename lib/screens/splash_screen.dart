@@ -13,9 +13,9 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return AnimatedSplashScreen(
-      backgroundColor: Colors.black87,
+      backgroundColor: Colors.white,
       duration: 2000,
-      splash: Icon(Icons.workspaces_filled,color: Colors.white,size: 100,),
+      splash: Image(image: AssetImage('assets/redheart_logo.png')),
       splashTransition: SplashTransition.fadeTransition,
       nextScreen: LoginScreen(),
     );

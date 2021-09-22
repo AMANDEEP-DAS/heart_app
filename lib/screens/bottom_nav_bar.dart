@@ -31,7 +31,7 @@ class _BottomNavState extends State<BottomNav> {
         currentIndex: _currentIndex,
         items: [
           BottomNavigationBarItem(icon: Icon(Icons.home,size: 30,),label: ''),
-          BottomNavigationBarItem(icon: Icon(Icons.chat,size: 30,),label: ''),
+          BottomNavigationBarItem(icon: Icon(Icons.local_hospital,size: 30,),label: ''),
           // BottomNavigationBarItem(icon: Icon(Icons.category,size: 30,),label: ''),
           BottomNavigationBarItem(icon: Icon(Icons.account_circle,size: 30,),label: ''),
         ],

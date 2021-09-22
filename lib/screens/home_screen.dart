@@ -34,7 +34,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text('Search',style: TextStyle(fontWeight: FontWeight.w900,fontSize: 30,color: Colors.black),),
-                            Text('for planets',style: TextStyle(fontSize: 30,color: Colors.black)),
+                            // Text('',style: TextStyle(fontSize: 30,color: Colors.black)),
                           ],
                         ),
                       ),
@@ -89,7 +89,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                   SizedBox(height: 40,),
                   Text('Popular',style: TextStyle(fontWeight: FontWeight.w900,fontSize: 30,color: Colors.black),),
-                  Text('categories',style: TextStyle(fontSize: 30,color: Colors.black)),
+                  Text('Doctors nearby',style: TextStyle(fontSize: 30,color: Colors.black)),
                   SizedBox(height: 10,),
                   Container(
                     height: 70,

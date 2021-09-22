@@ -13,7 +13,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       body: Container(
         padding: EdgeInsets.only(left: 15,top: 15),
-        color: Colors.black87,
+        color: Colors.white,
         height: MediaQuery.of(context).size.height,
         width: MediaQuery.of(context).size.width,
         child: SafeArea(
@@ -33,8 +33,8 @@ class _HomeScreenState extends State<HomeScreen> {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text('Search',style: TextStyle(fontWeight: FontWeight.w900,fontSize: 30,color: Colors.white),),
-                            Text('for planets',style: TextStyle(fontSize: 30,color: Colors.white)),
+                            Text('Search',style: TextStyle(fontWeight: FontWeight.w900,fontSize: 30,color: Colors.black),),
+                            Text('for planets',style: TextStyle(fontSize: 30,color: Colors.black)),
                           ],
                         ),
                       ),
@@ -51,7 +51,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         children: [
                           Container(
                             decoration: BoxDecoration(
-                                color: Colors.grey.shade800,
+                                color: Colors.grey.shade400,
                                 borderRadius: BorderRadius.all(Radius.circular(20))
                             ),
                             child: ListTile(
@@ -64,7 +64,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                 decoration: InputDecoration(
                                     hintText: 'Search...',
                                     hintStyle: TextStyle(
-                                      color: Colors.grey.shade400,
+                                      color: Colors.white,
                                       fontSize: 18,
                                     ),
                                     border: InputBorder.none
@@ -78,7 +78,7 @@ class _HomeScreenState extends State<HomeScreen> {
                               height: 70,
                               width: 70,
                               decoration: BoxDecoration(
-                                color: Colors.deepOrangeAccent,
+                                color: Color(0xfff2870c),
                                 borderRadius: BorderRadius.only(topLeft: Radius.circular(60)),
                               ),
                               child: Icon(Icons.filter_list,color: Colors.white,size: 30,),
@@ -88,8 +88,8 @@ class _HomeScreenState extends State<HomeScreen> {
                       )
                   ),
                   SizedBox(height: 40,),
-                  Text('Popular',style: TextStyle(fontWeight: FontWeight.w900,fontSize: 30,color: Colors.white),),
-                  Text('categories',style: TextStyle(fontSize: 30,color: Colors.white)),
+                  Text('Popular',style: TextStyle(fontWeight: FontWeight.w900,fontSize: 30,color: Colors.black),),
+                  Text('categories',style: TextStyle(fontSize: 30,color: Colors.black)),
                   SizedBox(height: 10,),
                   Container(
                     height: 70,
@@ -103,21 +103,48 @@ class _HomeScreenState extends State<HomeScreen> {
                           children: [
                             Container(width: 200,
                               decoration: BoxDecoration(
-                                  color: Colors.grey.shade800,
+                                  gradient: LinearGradient(
+                                      begin: Alignment.centerLeft,
+                                      end: Alignment.centerRight,
+                                      colors: [
+                                        Color(0xff0ad1a9),
+                                        Color(0xff0ad1a9).withOpacity(0.5),
+                                        Color(0xff0ad1a9)
+                                      ],
+                                      stops: [0.0,0.5,1.0]
+                                  ),
                                   borderRadius: BorderRadius.all(Radius.circular(20))
                               ),
                             ),
                             SizedBox(width: 10,),
                             Container(width: 200,
                               decoration: BoxDecoration(
-                                  color: Colors.grey.shade800,
+                                  gradient: LinearGradient(
+                                      begin: Alignment.centerLeft,
+                                      end: Alignment.centerRight,
+                                      colors: [
+                                        Color(0xff0ad1a9),
+                                        Color(0xff0ad1a9).withOpacity(0.5),
+                                        Color(0xff0ad1a9)
+                                      ],
+                                      stops: [0.0,0.5,1.0]
+                                  ),
                                   borderRadius: BorderRadius.all(Radius.circular(20))
                               ),
                             ),
                             SizedBox(width: 10,),
                             Container(width: 200,
                               decoration: BoxDecoration(
-                                  color: Colors.grey.shade800,
+                                  gradient: LinearGradient(
+                                      begin: Alignment.centerLeft,
+                                      end: Alignment.centerRight,
+                                      colors: [
+                                        Color(0xff0ad1a9),
+                                        Color(0xff0ad1a9).withOpacity(0.5),
+                                        Color(0xff0ad1a9)
+                                      ],
+                                      stops: [0.0,0.5,1.0]
+                                  ),
                                   borderRadius: BorderRadius.all(Radius.circular(20))
                               ),
                             ),
@@ -127,7 +154,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                   ),
                   SizedBox(height: 40,),
-                  Text('Last Viewed',style: TextStyle(fontWeight: FontWeight.w900,fontSize: 30,color: Colors.white),),
+                  Text('Last Viewed',style: TextStyle(fontWeight: FontWeight.w900,fontSize: 30,color: Colors.black),),
                   SizedBox(height: 20,),
                   Row(
                     children: [
@@ -135,7 +162,16 @@ class _HomeScreenState extends State<HomeScreen> {
                         height: 200,
                         width: MediaQuery.of(context).size.width/2.3,
                         decoration: BoxDecoration(
-                            color: Colors.lime,
+                            gradient: LinearGradient(
+                              begin: Alignment.topCenter,
+                              end: Alignment.bottomCenter,
+                              colors: [
+                                Color(0xfff2870c),
+                                Color(0xfff2870c).withOpacity(0.7),
+                                Color(0xfff2870c)
+                              ],
+                              stops: [0.0,0.5,1.0]
+                            ),
                             borderRadius: BorderRadius.all(Radius.circular(20))
                         ),
                       ),
@@ -144,7 +180,16 @@ class _HomeScreenState extends State<HomeScreen> {
                         height: 200,
                         width: MediaQuery.of(context).size.width/2.3,
                         decoration: BoxDecoration(
-                            color: Colors.blueGrey,
+                            gradient: LinearGradient(
+                                begin: Alignment.topCenter,
+                                end: Alignment.bottomCenter,
+                                colors: [
+                                  Color(0xfff2870c),
+                                  Color(0xfff2870c).withOpacity(0.7),
+                                  Color(0xfff2870c)
+                                ],
+                                stops: [0.0,0.5,1.0]
+                            ),
                             borderRadius: BorderRadius.all(Radius.circular(20))
                         ),
                       )
@@ -157,7 +202,16 @@ class _HomeScreenState extends State<HomeScreen> {
                         height: 200,
                         width: MediaQuery.of(context).size.width/2.3,
                         decoration: BoxDecoration(
-                            color: Colors.greenAccent,
+                            gradient: LinearGradient(
+                                begin: Alignment.topCenter,
+                                end: Alignment.bottomCenter,
+                                colors: [
+                                  Color(0xfff2870c),
+                                  Color(0xfff2870c).withOpacity(0.7),
+                                  Color(0xfff2870c)
+                                ],
+                                stops: [0.0,0.5,1.0]
+                            ),
                             borderRadius: BorderRadius.all(Radius.circular(20))
                         ),
                       ),
@@ -166,7 +220,16 @@ class _HomeScreenState extends State<HomeScreen> {
                         height: 200,
                         width: MediaQuery.of(context).size.width/2.3,
                         decoration: BoxDecoration(
-                            color: Colors.pink,
+                            gradient: LinearGradient(
+                                begin: Alignment.topCenter,
+                                end: Alignment.bottomCenter,
+                                colors: [
+                                  Color(0xfff2870c),
+                                  Color(0xfff2870c).withOpacity(0.7),
+                                  Color(0xfff2870c)
+                                ],
+                                stops: [0.0,0.5,1.0]
+                            ),
                             borderRadius: BorderRadius.all(Radius.circular(20))
                         ),
                       )
